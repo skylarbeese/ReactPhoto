@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Arr from './../imgArray'
 
 function Banner() {
   return (
@@ -15,7 +15,9 @@ function Banner() {
         </div>
         <div className="grad"></div>
         <div className="banner-img">
-
+       
+             <div className="image-banner " style= {{backgroundImage: `url(${Arr[0]})`}}></div>
+      
         </div>
     </div>
    </>

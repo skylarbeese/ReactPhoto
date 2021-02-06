@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Arr from './../imgArr2'
 
 function Gallery() {
   return (
@@ -15,10 +15,13 @@ function Gallery() {
      
         </div>
         <div className="gallery-imgs">
-            <div className="img"></div>
-            <div className="img"></div>
+        {Arr.map(im => {
+            return   <div className="gal-img" style= {{backgroundImage: `url(${im})`}}></div>
+        })}
         </div>
-        <h3> click here</h3>
+       <div className="btn">
+           <h2 style={{fontStyle: 'italic'}}>click here</h2>
+       </div>
     </div>
    </>
   );
