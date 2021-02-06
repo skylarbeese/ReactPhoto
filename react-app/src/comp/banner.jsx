@@ -1,7 +1,7 @@
 import React from 'react'
 import Arr from './../imgArray'
 
-function Banner() {
+function Banner({banner}) {
   return (
    <>
     <div className="banner-con">

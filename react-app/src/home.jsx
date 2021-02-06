@@ -1,21 +1,28 @@
 import React from 'react'
-import Arr from './imgArray'
+//import Arr from './imgArray'
 import Nav from './comp/nav'
-import HeroImg from './comp/heroImg'
+import HeroImg1 from './comp/heroImg1'
 import Cat from './comp/cat'
 import Banner from './comp/banner'
 import Gallery from './comp/gallery'
 import Footer from './comp/footer'
+
+//import Arr2 from './imgArr2'
+
 function Home() {
 
   return (
    <>
     
      <Nav />
-     <HeroImg slides={Arr}/>
+     
+     <HeroImg1 />
      <Cat />
      <Banner />
-     <Gallery />
+     <Gallery /> 
+    
+       
+    
      <Footer />
    </>
 );

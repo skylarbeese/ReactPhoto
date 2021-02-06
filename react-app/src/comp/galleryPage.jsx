@@ -1,11 +1,11 @@
 import React from 'react'
-import Arr from './../imgArray'
+
 
 function GalPage() {
   return (
    <>
     <div className="gal-page-con">
- 
+       <h1>gallery page</h1>
     </div>
    </>
   );
