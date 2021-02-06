@@ -38,25 +38,30 @@ nav ul li{
   display: flex;
 
 }
-.right:hover{
-  color: red
-}
+
 .arrows{
   font-size: 3rem;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   position: absolute;
- 
+  color: white;
+  
+}
+.right{
+  margin-left: 2rem;
+}
+.left{
+  margin-right: 2rem;
 }
 .grad-hero{
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgb(117, 106, 106, .7);
-  z-index: 1;
+  background-color: rgb(117, 106, 106, .2);
+  z-index: 2;
 }
 .slider{
   
@@ -73,7 +78,7 @@ nav ul li{
   height: 100vh;
  background-repeat: no-repeat;
   background-size: cover;
-
+  z-index: 1;
 }
 
 /*-----cat-------------------------------------------------------------------------------------------*/
@@ -100,7 +105,7 @@ nav ul li{
 }
 .img-cat{
   grid-template-columns: repeat(2, 1fr);
- 
+  gap: 2rem;
   grid-template-rows: auto auto;
   display: grid;
   
@@ -108,24 +113,30 @@ nav ul li{
 .image-grid{
   width: 330px;
   height: 330px;
-  margin: 1rem;
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
-  position: relative;
 
+  position: relative;
+  
 }
+
 .cat-im-text{
   position: absolute;
   z-index: 1;
   color: white;
+  transform: translateX(-330px); 
+ 
+  transition: .8s;
 }
 .im-con{
   background-color: coral; 
    justify-content: center;
   align-items: center;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 .grad-small{
   margin: 1rem;
@@ -134,8 +145,10 @@ nav ul li{
   position: absolute;
   background-color: rgb(117, 106, 106, .2);
   background-position: center; 
-  
+  transform: translateX(330px); 
   z-index: 1;
+  transition: .8s;
+ 
 }
 .underline{
   width: 70%;
@@ -143,7 +156,14 @@ nav ul li{
   background-color:black;
   
 }
+/*------------------------------------*/
+.im-con:hover .grad-small{
+  transform: translateX(0px); 
+}
 
+.im-con:hover .cat-im-text{
+  transform: translateX(0px); 
+}
 /*-------------banner-----------------------------------------------------------------------------------*/
 .banner-con{
   justify-content: space-around;

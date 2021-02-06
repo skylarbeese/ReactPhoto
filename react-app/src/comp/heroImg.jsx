@@ -17,12 +17,12 @@ function HeroImg({slides}) {
   return (
    <>
    <div className="">
-      <div className="arrows">
+    
+    <div className="img-con">
+    <div className="arrows">
             <div className="right" onClick={prevSlide}> right </div>
             <div className="left" onClick={nextSlide}> left </div>
         </div>
-    <div className="img-con">
-     
     <div className="grad-hero"></div> 
     <div className="slider">
     {Arr.map((im, index) => {
