@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.nav-con{
+
+  width: 100%;
+  height: 11vh;
+  background-color: black;
+}
+nav{
+
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: blue;
+}
+nav ul{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 2rem;
+}
+nav ul li{
+
+  list-style: none;
+  color: white;
+  font-size: 2rem;
+}
+/*-------heroImg-----------------------------------------------------------------------------------------*/
+
+.img-con{
+  
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+
+/*-----cat-------------------------------------------------------------------------------------------*/
+.cat-con{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+ padding: 2rem;
+}
+
+.cat-text h1{
+ padding-top: 2rem;
+ padding-bottom: 1rem;
+}
+.cat-text{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.cat-text p {
+  width: 30vw;
+  margin-top: 1rem;
+}
+.img-cat{
+  width: 40%;
+  height: 20px;
+  background-color: brown;
+}
+.underline{
+  width: 70%;
+  height: 2px;
+  background-color:black;
+  
+}
+
+/*-------------banner-----------------------------------------------------------------------------------*/
+.banner-con{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+ 
+}
+
+.banner-text h1{
+ padding-top: 2rem;
+ padding-bottom: 1rem;
+}
+.grad{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(117, 106, 106, .2);
+  z-index: 2;
+}
+.banner-text{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  color: beige;
+}
+.banner-text p {
+  width: 30vw;
+  margin-top: 1rem;
+}
+.banner-con .underline{
+  background-color: beige;
+}
+.banner-img{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+  
+}
+/*----------gallery---------------------------------------------------------------------------------*/
+.gallery-con{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+ margin: 2rem;
+}
+.gallery-text{
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+.gallery-text p{
+  width: 30vw;
+  margin-top: 1rem;
+}
+.gallery-imgs{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.img{
+  width: 40%;
+  height: 20px;
+  background-color: brown;
+  margin: 2rem;
+}
+/*--------footer---------------------------------------------------------------------------------------*/
+.footer-con{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
