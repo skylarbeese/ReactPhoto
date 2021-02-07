@@ -8,7 +8,7 @@ function Nav() {
          <nav>
              <ul>
                  <Link to=""><li>Home</li></Link>
-                <Link to="/comp/contact"><li> Contact</li></Link>
+                <Link to="/comp/contact1"><li> Contact</li></Link>
                  <Link to="/comp/galleryPage"><li>Gallery</li></Link>
              </ul>
          </nav>
