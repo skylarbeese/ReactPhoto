@@ -4,23 +4,27 @@ import {useWindowScroll} from 'react-use'
 function Banner() {
     const[show, setShow] = React.useState(false)
     const {y: pageYOffset } = useWindowScroll()
+    console.log(pageYOffset)
+    //console.log(show)
     React.useEffect(() => {
-       if(pageYOffset > 600) {
+       if(pageYOffset > 1500) {
           setShow(true)
-          
-       }
+        } else {
+            setShow(false)
+        }
+       
     }, [pageYOffset])
   return (
    <>
     <div className="banner-con">
-       {show ? (<div className="banner-text">
-            <h1>This is the Title</h1>
-            <div className="underline"></div>
-            <p>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
+     <div className={`banner-text`}>
+            <h1 className={show ? 'ban' : 'trans'}>This is the Title</h1>
+            <div className={`underline ${show ? '' : ''}`}></div>
+            <p className={show ? '' : ''}>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
                 capicola tri-tip burgdoggen. Chislic meatloaf meatball, beef ribs 
                
             </p>
-        </div>) : ''}
+        </div>
         <div className="grad"></div>
         <div className="banner-img">
        

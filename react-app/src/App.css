@@ -204,10 +204,21 @@ nav ul li{
  
 }
 
+.trans{
+  transform: translateX(700px);
+  transition: 1s;
+}
+.ban{
+  transform: translateX(0px);
+  transition: 1s;
+}
 .banner-text h1{
  padding-top: 2rem;
  padding-bottom: 1rem;
+
+
 }
+
 .grad{
   position: absolute;
   width: 100%;
