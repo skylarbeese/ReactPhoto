@@ -88,6 +88,18 @@ nav ul li{
   align-items: center;
   display: flex;
 }
+@keyframes sliders{
+  from{
+    opacity: 0;
+    
+  }
+  to{
+    opacity: 1;
+  }
+}
+.slide-img{
+  animation: sliders .4s;
+}
 .slide-img{
   justify-content: center;
   align-items: center;
@@ -99,6 +111,7 @@ nav ul li{
   z-index: 1;
   background-attachment: fixed;
 }
+
 
 /*-----cat-------------------------------------------------------------------------------------------*/
 .cat-con{
