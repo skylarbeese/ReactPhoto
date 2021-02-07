@@ -2,29 +2,35 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+}
 .nav-con{
 
   width: 100%;
-  height: 11vh;
-  background-color: black;
+  height: 17vh;
+  border-bottom: 2px solid black;
 }
 nav{
-
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
   display: flex;
   width: 50%;
   height: 100%;
-  background-color: blue;
+ 
+
 }
 nav ul{
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: flex;
   margin: 2rem;
 }
 nav ul li{
-
+ margin: 2rem;
   list-style: none;
-  color: white;
+  color: black;
   font-size: 2rem;
 }
 /*-------heroImg-----------------------------------------------------------------------------------------*/
@@ -52,15 +58,27 @@ nav ul li{
 }
 .right{
   margin-left: 2rem;
+  transition: .8s;
+  color: rgb(255, 255, 255, 0.4);
 }
 .left{
   margin-right: 2rem;
+  transition: .8s;
+  color: rgb(255, 255, 255, 0.4);
+}
+.left:hover{
+  transform: scale(1.2);
+  color: rgb(255, 255, 255);
+}
+.right:hover{
+  transform: scale(1.2);
+  color: rgb(255, 255, 255);
 }
 .grad-hero{
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgb(117, 106, 106, .2);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.4));
   z-index: 2;
 }
 .slider{
@@ -181,8 +199,8 @@ nav ul li{
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-color: rgb(117, 106, 106, .2);
-  z-index: 2;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgba(39, 37, 37, 0.6));
+  z-index: 1;
 }
 .banner-text{
   position: absolute;
@@ -190,7 +208,7 @@ nav ul li{
   align-items: center;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 2;
   color: beige;
 }
 .banner-text p {

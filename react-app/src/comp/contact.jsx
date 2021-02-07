@@ -1,10 +1,12 @@
 import React from 'react'
 import Arr from './../imgArray'
-
+import Nav from './nav'
+import Footer from './footer'
 function Contact() {
  
   return (
    <>
+   <Nav />
     <div className="contact-con">
       <div className="contact-text">
 
@@ -21,6 +23,7 @@ function Contact() {
         </form>
       </div>
     </div>
+    <Footer />
    </>
   );
 }

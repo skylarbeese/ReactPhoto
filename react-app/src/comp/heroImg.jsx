@@ -20,8 +20,8 @@ function HeroImg({slides}) {
     
     <div className="img-con">
     <div className="arrows">
-            <div className="right" onClick={prevSlide}> right </div>
-            <div className="left" onClick={nextSlide}> left </div>
+            <div className="right" onClick={prevSlide}><i class="fas fa-caret-left"></i></div>
+            <div className="left" onClick={nextSlide}><i class="fas fa-caret-right"></i></div>
         </div>
     <div className="grad-hero"></div> 
     <div className="slider">
