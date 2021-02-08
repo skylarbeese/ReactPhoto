@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Arr from './../imgArray'
-
+import { Parallax } from 'react-scroll-parallax';
 function HeroImg({slides}) {
     const[active, setActive] = React.useState(0)
     const[mouse, setMouse] = React.useState(false)
@@ -36,15 +36,20 @@ function HeroImg({slides}) {
             <div className={`right ${mouse ? 'left-arrows-apear' : 'left-arrows-hide'}`} onClick={prevSlide}><i class="fas fa-caret-left"></i></div>
             <div className={`left ${mouse ? 'right-arrows-apear' : 'right-arrows-hide'}`} onClick={nextSlide}><i class="fas fa-caret-right"></i></div>
         </div>
+     
     <div className="grad-hero"></div> 
     <div className="slider">
+       
     {Arr.map((im, index) => {
        return   <div key={index}>
           {index === active &&  <div className="slide-img" style= {{backgroundImage: `url(${im})` }}></div>}
         </div> 
         })}
+        
     </div>
+  
     </div>
+ 
     </div>
     </section>
    </>

@@ -352,7 +352,7 @@ nav ul li{
   .para-gal-hide{
     opacity: 0;
     transform: translateY(100px);
-    transition: 1s .4s;
+    transition: 1s ;
   }
   .header-show{
     opacity: 1;
@@ -362,7 +362,7 @@ nav ul li{
   .header-hide{
     opacity: 0;
     transform: translateY(100px);
-    transition: 1s ;
+    transition: 1s .4s;
   }
   .under-gal-show{
     opacity: 1;
@@ -383,7 +383,7 @@ nav ul li{
 .img-gal-hide{
   opacity: 0;
   transform: translateY(200px);
-  transition: 1s .5s;
+  transition: 1s ;
 }
 /*--------------------------------------*/
 .gallery-text{
@@ -430,20 +430,20 @@ nav ul li{
   width: 100%;
 }
 /*----------- contact-------------------------------------------------------------------------------------*/
-body{
+body {
   overflow-x: hidden;
   width: 100vw;
 }
-.contact{
+.contact {
   justify-content: space-around;
   align-items: center;
   display: flex;
 }
-.img-contact{
+.img-contact {
   width: 30%;
   margin-right: 6rem;
 }
-.img{
+.img {
   width:100%;
   height: 600px;
   background-size: cover;
@@ -554,3 +554,42 @@ form button:hover {
   color:black;
   font-weight: bold;
 } 
+
+/*------------galleryPage------------------------------------------------------------------------------*/
+ .gal-page-con{
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+ }
+ .galPage-img-con{
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+ } 
+ .galPage-grid{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  grid-template-rows: auto auto;
+  display: grid;
+ }
+ .gal-page-img-con{
+  width: 400px;
+  height: 330px;
+ }
+ .image-gal-page{
+  width: 100%;
+  height: 330px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  position: relative;
+ }
+/*----------------------------------------------------------------------------------------------------*/
