@@ -6,24 +6,28 @@ import Cat from './comp/cat'
 import Banner from './comp/banner'
 import Gallery from './comp/gallery'
 import Footer from './comp/footer'
-
+import { ParallaxProvider } from 'react-scroll-parallax';
 //import Arr2 from './imgArr2'
 
 function Home() {
 
   return (
    <>
-    
+    <section>
      <Nav />
      
      <HeroImg1 />
      <Cat />
-     <Banner />
+     <ParallaxProvider>
+       <Banner />
+     </ParallaxProvider>
+     
      <Gallery /> 
     
        
     
      <Footer />
+     </section>
    </>
 );
 }

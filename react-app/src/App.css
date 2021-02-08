@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  
 }
 a{
   text-decoration: none;
@@ -34,7 +35,24 @@ nav ul li{
   font-size: 2rem;
 }
 /*-------heroImg-----------------------------------------------------------------------------------------*/
-
+/*--------------------------------------*/
+  .right-arrows-hide{
+    transform: translateX(100px);
+    transition: 1s ;
+  }
+  .right-arrows-apear{
+    transform: translateX(0px);
+  transition: 1s ;
+  }
+  .left-arrows-hide{
+    transform: translateX(-100px);
+    transition: 1s ;
+  }
+  .left-arrows-apear{
+    transform: translateX(0px);
+    transition: 1s ;
+  }
+/*--------------------------------------*/
 .img-con{
   position: relative;
   width: 100%;
@@ -132,33 +150,35 @@ nav ul li{
 }
 .title-hide{
   transform: translateY(1000px);
-  transition: 1s;
+  transition: 1s .4s;
 }
 .under-cat{
   transform: translateY(0px);
-  transition: 1s;
+  transition: 1s .2s;
 }
 .under-cat-hide{
   transform: translateY(1000px);
-  transition: 1s;
+  transition: 1s .2s;
 }
 .para-cat{
   transform: translateY(0px);
-  transition: 1s;
+  transition: 1s .4s;
 }
 .para-cat-hide{
   transform: translateY(1000px);
-  transition: 1s;
+  transition: 1s ;
 }
 .img-grid-trans{
   transform: translateY(0px);
   opacity: 1;
-  transition: 1s;
+
+  transition: 1s .4s;
 }
 .img-grid-trans-hide{
   opacity: 0;
   transform: translateY(1000px);
-  transition: 1s;
+  
+  transition: 1s .6s;
 }
 /*--------------------------------------*/
 .cat-text{
@@ -211,7 +231,7 @@ nav ul li{
   width: 330px;
   height: 330px;
   position: absolute;
-  background-color: rgb(117, 106, 106, .2);
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.4));
   background-position: center; 
   transform: translateX(330px); 
   z-index: 1;
@@ -237,7 +257,8 @@ nav ul li{
   justify-content: space-around;
   align-items: center;
   display: flex;
- 
+  overflow-x: hidden;
+  width:100vw;
 }
 
 .trans{
@@ -257,7 +278,7 @@ nav ul li{
 
 .grad{
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgba(39, 37, 37, 0.6));
   z-index: 1;
@@ -278,19 +299,19 @@ nav ul li{
 /*------------------------------------*/
 .para{
   transform: translateX(1000px);
-  transition: 1s;
+  transition: 1s .4s;
  }
  .para-hide{
   transform: translateX(0px);
-  transition: 1s;
+  transition: 1s .4s;
  }
  .under{
   transform: translateX(-1000px);
-  transition: 1s;
+  transition: 1s .3s;
  }
  .under-hide{
   transform: translateX(0px);
-  transition: 1s;
+  transition: 1s .3s;
  }
  /*------------------------------------*/
 .banner-con .underline{
@@ -311,6 +332,7 @@ nav ul li{
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  
 }
 /*----------gallery---------------------------------------------------------------------------------*/
 .gallery-con{
@@ -321,6 +343,49 @@ nav ul li{
   width: 100%;
  margin: 2rem;
 }
+/*--------------------------------------*/
+  .para-gal-show{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s .4s;
+  }
+  .para-gal-hide{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s .4s;
+  }
+  .header-show{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s ;
+  }
+  .header-hide{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s ;
+  }
+  .under-gal-show{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s .2s;
+  }
+  .under-gal-hide{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 1s .2s;
+  }
+/*--------------------------------------*/
+.img-gal-show{
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1s .5s;
+}
+.img-gal-hide{
+  opacity: 0;
+  transform: translateY(200px);
+  transition: 1s .5s;
+}
+/*--------------------------------------*/
 .gallery-text{
 
   justify-content: center;
@@ -354,6 +419,9 @@ nav ul li{
   background-color: brown;
   margin: 2rem;
 }
+.section{
+  overflow-y: hidden;
+}
 /*--------footer---------------------------------------------------------------------------------------*/
 .footer-con{
   justify-content: space-around;
@@ -362,8 +430,9 @@ nav ul li{
   width: 100%;
 }
 /*----------- contact-------------------------------------------------------------------------------------*/
-section{
-  overflow: hidden;
+body{
+  overflow-x: hidden;
+  width: 100vw;
 }
 .contact{
   justify-content: space-around;
