@@ -19,8 +19,8 @@ function Banner() {
     <div className="banner-con">
      <div className={`banner-text`}>
             <h1 className={show ? 'ban' : 'trans'}>This is the Title</h1>
-            <div className={`underline ${show ? '' : ''}`}></div>
-            <p className={show ? '' : ''}>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
+            <div className={`underline ${show ? 'under-hide' : 'under'}`}></div>
+            <p className={show ? 'para-hide' : 'para'}>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
                 capicola tri-tip burgdoggen. Chislic meatloaf meatball, beef ribs 
                
             </p>

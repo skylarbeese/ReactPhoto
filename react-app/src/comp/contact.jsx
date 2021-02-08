@@ -1,41 +1,62 @@
 import React from 'react'
-import Arr from './../imgArray'
+import Arr from './../imgArr1'
 import Nav from './nav'
 import Footer from './footer'
+import EmailJs from 'emailjs-com'
 function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault()
  
+    EmailJs.sendForm('gmail', 'template_0y45lja', e.target, 'user_xy8ABjwAfQzsJe1G1xVR6')
+    .then((result) => {
+     console.log(result.text);
+ }, (error) => {
+     console.log(error.text);
+ });
+   e.target.reset()
+   }
   return (
    <>
    <section>
    <Nav />
-    <div className="contact-con">
-      <div className="contact-text">
-
-      </div>
-      <div className="bottom">
-      <div className="contact-footer-img">
-      <div className="grad-form"></div> 
-      <div className="footer-img" style= {{backgroundImage: `url(${Arr[0]})`}}></div>
-      </div>
-      <div className="con-form">
-        <form>
-          <h1> Send me a message! </h1>
+    <div className="contact">
+      <div className="form">
+     <div className="header-text">
+         <h1 className="head"> Send me a message! </h1>
+         <p>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
+                capicola tri-tip burgdoggen. Chislic meatloaf meatball, beef ribs 
+               
+            </p>
+         <div className="underline-contact"></div>
+          </div>
+          
+          <div className="con-form">
+          
+        <form onSubmit={sendEmail}>
+      
           <div className="con-input">
             <div className="in-con">
-           <label for="name">Enter your name* </label>
+            <input type="hidden" name="to_name" />
+           <label>Enter your name* </label>
               <input type="text" name="name" placeholder="Enter your full name"/>
              </div>
              <div className="in-con">
-           <label for="email">Enter your email address* </label>
+           <label>Enter your email address* </label>
               <input type="text" name="email" placeholder="Enter your email address"/>
               </div>
             </div>
-           <label for="textarea">Type your message here* </label>
+           <label>Type your message here* </label>
                <textarea name="message" id="" rows="" placeholder="type your message..."></textarea>
-           <button>send message</button>
+           <button type="submit" value="Send" >send message</button>
         </form>
-      </div>
-      </div>
+     </div>
+   </div> 
+
+     <div className="img-contact">
+     <div className="img" style= {{backgroundImage: `url(${Arr})`}}></div>
+       </div>
+
+    
     </div>
     <Footer />
     </section>
