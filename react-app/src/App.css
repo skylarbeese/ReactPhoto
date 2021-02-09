@@ -10,7 +10,7 @@ a{
 
   width: 100%;
   height: 17vh;
-  border-bottom: 2px solid black;
+ 
 }
 nav{
   justify-content: space-around;
@@ -557,7 +557,7 @@ form button:hover {
 
 /*------------galleryPage------------------------------------------------------------------------------*/
  .gal-page-con{
-  width: 100%;
+  width: 100vw;
 
   justify-content: center;
   align-items: center;
@@ -565,7 +565,7 @@ form button:hover {
   flex-direction: column;
  }
  .galPage-img-con{
-  width: 100%;
+  width: 100vw;
 
   justify-content: center;
   align-items: center;
@@ -573,23 +573,121 @@ form button:hover {
   flex-direction: column;
  } 
  .galPage-grid{
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  grid-template-rows: auto auto;
+ width: 100%;
+
+
   display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-auto-rows: auto;
+  grid-template-areas:
+    ""
+
+  ;
+ 
+  
  }
+ .img-0{
+  grid-area: img-0;
+ }
+ .img-1{
+  grid-area: img-1;
+ }
+ .img-2{
+  grid-area: img-2;
+ }
+ .img-3{
+  grid-area: img-3;
+ }
+ .img-4{
+  grid-area: img-4;
+ }
+ .img-5{
+  grid-area: img-5;
+ }
+ .img-6{
+  grid-area: img-6;
+
+ }
+ .img-8{
+  grid-area: img-8;
+ } 
+ .img-9{
+  grid-area: img-9;
+ } 
+ .img-10{
+  grid-area: img-10;
+ } 
+ .img-11{
+  grid-area: img-11;
+ } 
+ .img-12{
+  grid-area: img-12;
+ } 
+ .img-13{
+  grid-area: img-13;
+ } 
+ .img-14{
+  grid-area: img-14;
+ } 
+ .img-15{
+  grid-area: img-15;
+ } 
+ .img-16{
+  grid-area: img-16;
+ } 
+ .img-17{
+  grid-area: img-17;
+ } 
+ .img-18{
+  grid-area: img-18;
+ } 
+ .img-19{
+  grid-area: img-19;
+ } 
+ 
  .gal-page-img-con{
-  width: 400px;
-  height: 330px;
+  width: 350px;
+  
  }
  .image-gal-page{
-  width: 100%;
-  height: 330px;
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+ width: 100%;
 
-  position: relative;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ background-color: aqua;
  }
-/*----------------------------------------------------------------------------------------------------*/
+ .image-gal-page:hover{
+   cursor: pointer;
+   transition: .8s;
+   opacity: .7;
+ }
+/*--------Modal----------------------------------------------------------------------------------------*/
+.modal-con{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 2;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.9));
+}
+.modal-image{
+  width: 700px;
+  height: 600px;
+  z-index: 3;
+}
+/*------------------------------------------*/
+  .modal-hide{
+ 
+    transform: translateY(1000px);
+    transition: 1s ;
+  }
+  .modal-show{
+
+    transform: translateY(0px);
+    transition: 1s ;
+  }
+
+/*------------------------------------------*/
