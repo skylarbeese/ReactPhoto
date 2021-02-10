@@ -19,7 +19,7 @@ function GalPage() {
    {showModal ? (<Modal popImgUrl={popImgUrl} closePop={handlePopUp} />) : null}
    <Nav />
     <div className="gal-page-con">
-       <h1>gallery page</h1>
+  
        <div className="galPage-img-con">
          <div className="galPage-grid">
          {ArrGal.map((imgUrl, index) => {

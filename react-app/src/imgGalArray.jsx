@@ -14,11 +14,10 @@ const Arr = [
     "/img/img27.jpg",
     "/img/img15.jpg",
     "/img/img24.jpg",
-    "/img/img41.jpg",
-    "/img/img5.jpg",
-    "/img/img30.jpg",
-    "/img/img35.jpg",
-    "/img/img55.jpg", 
+  /*  "/img/img41.jpg", */
+    "/img/img19.jpg",
+ 
+    
 
     
 

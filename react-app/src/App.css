@@ -574,10 +574,12 @@ form button:hover {
  } 
  .galPage-grid{
  width: 90%;
+ justify-content: center;
+ align-items: center;
 
  gap: .5rem;
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
+  grid-template-columns: repeat(21, 1fr);
   grid-template-rows: repeat(20, 90px);
 
   
@@ -585,7 +587,7 @@ form button:hover {
  
  .img-0{
  /* grid-area: img-0; */
- grid-column: span 5;
+ grid-column: span 6;
  grid-row: span 5;
  }
  .img-1{
@@ -600,7 +602,7 @@ grid-row: span 5;
  }
  .img-3{
 /*  grid-area: img-3; */
-grid-column: span 5;
+grid-column: span 6;
 grid-row: span 5;
  }
  .img-4{
@@ -660,30 +662,20 @@ grid-row: span 2;
  } 
  .img-15{
  /* grid-area: img-15; */
- grid-column: span 7;
-grid-row: span 5;
+ grid-column: span 12;
+grid-row: span 3;
  } 
  .img-16{
 /*  grid-area: img-16; */
-grid-column: span 5;
-grid-row: span 3;
+grid-column: span 8;
+grid-row: span 2;
  } 
  .img-17{
 /*  grid-area: img-17; */
-grid-column: span 8;
-grid-row: span 4;
+grid-column: span 7;
+grid-row: span 3;
  } 
- .img-18{
-/*  grid-area: img-18; */
-grid-column: span 4;
-grid-row: span 2;
- } 
- .img-19{
-/*  grid-area: img-19; */
-grid-column: span 4;
-grid-row: span 2;
- } 
- 
+
 
  .image-gal-page{
 width: 100%;
