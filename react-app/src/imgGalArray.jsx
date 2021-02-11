@@ -4,7 +4,7 @@ const Arr = [
     "/img/img53.jpg",
     "/img/img63.jpg",
     "/img/img38.jpg",
-    "/img/img20.jpg",
+    "/img/img3.jpg",
     "/img/img70.jpg",
     "/img/img40.jpg",
     "/img/img8.jpg",

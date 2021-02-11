@@ -19,7 +19,7 @@ function Gallery() {
 
   return (
    <>
-   <section className="section">
+  
     <div className="gallery-con">
     <div className="gallery-text">
             <h1 className={show ? 'header-show' : 'header-hide'}>This is the Title</h1>
@@ -39,7 +39,7 @@ function Gallery() {
            <Link to="/comp/galleryPage"><h2 style={{fontStyle: 'italic'}}>click here</h2></Link>
        </div>
     </div>
-    </section>
+
    </>
   );
 }

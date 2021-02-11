@@ -37,13 +37,13 @@ function Banner() {
             </p>
         </div>
         <div className="grad"></div>  
-        <Parallax y={[-5, 5]} >       
+           
           <div className="banner-img ">
      
              <div className="image-banner " style= {{backgroundImage: `url(${Arr[0]})`}}></div>
         
         </div>
-        </Parallax>
+      
     </div>
     </section>
    </>
