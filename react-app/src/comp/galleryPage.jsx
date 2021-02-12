@@ -44,7 +44,7 @@ React.useEffect(() => {
     setImgMoveRow2(false)
   }
   /*----------------------------*/
-  if(pageYOffset > 600) {
+  if(pageYOffset > 800) {
   
      setImgMoveRow3(true)
  
@@ -53,7 +53,7 @@ React.useEffect(() => {
      setImgMoveRow3(false)
    }
    /*----------------------------*/
-   if(pageYOffset > 800) {
+   if(pageYOffset > 900) {
   
     setImgMoveRow4(true)
 
@@ -62,7 +62,7 @@ React.useEffect(() => {
     setImgMoveRow4(false)
   }
   /*----------------------------*/
-  if(pageYOffset > 1000) {
+  if(pageYOffset > 1200) {
   
     setImgMoveRow5(true)
 

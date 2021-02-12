@@ -9,30 +9,64 @@ a{
 .nav-con{
 
   width: 100%;
-  height: 17vh;
+  height: 30vh;
  
 }
 nav{
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  display: flex;
-  width: 50%;
+
+  width: 100%;
   height: 100%;
  
 
+}
+.textt{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 40%;
+  height: 100%;
+}
+.link-font{
+  margin-right: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 10%;
+  height: 100%;
+  color: black;
+}
+nav .lo{
+  font-size: 2rem;
+  text-indent: 2rem;
+  z-index: 1;
+  padding: 2rem;
+}
+nav a{
+  color: black;
 }
 nav ul{
   justify-content: space-around;
   align-items: center;
   display: flex;
-  margin: 2rem;
+
+}
+span{
+  transform: translateY(2rem);
+  
 }
 nav ul li{
- margin: 2rem;
+ margin: 1rem;
   list-style: none;
   color: black;
-  font-size: 2rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid black;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+  transition: .4s;
 }
 /*-------heroImg-----------------------------------------------------------------------------------------*/
 /*--------------------------------------*/
@@ -96,7 +130,7 @@ nav ul li{
   position: absolute;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.4));
+  background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.2));
   z-index: 2;
 }
 .slider{
@@ -345,7 +379,7 @@ nav ul li{
  overflow-x: hidden;
 }
 /*--------------------------------------*/
-  .para-gal-show{
+/*  .para-gal-show{
     opacity: 1;
     transform: translateY(0px);
     transition: 1s .4s;
@@ -374,9 +408,9 @@ nav ul li{
     opacity: 0;
     transform: translateY(100px);
     transition: 1s .2s;
-  }
+  } */
 /*--------------------------------------*/
-.img-gal-show{
+/*.img-gal-show{
   opacity: 1;
   transform: translateY(0px);
   transition: 1s .5s;
@@ -385,7 +419,7 @@ nav ul li{
   opacity: 0;
   transform: translateY(200px);
   transition: 1s ;
-}
+} */
 /*--------------------------------------*/
 .gallery-text{
 
@@ -434,13 +468,33 @@ nav ul li{
   
 }
 .footer-text{
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   width: 100%;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
-
-
+.name{
+  font-size: 1rem;
+  color: black;
+}
+.logo a {
+  color: black;
+}
+.logo  {
+  width: 20%;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+h1 i{
+  font-size: 1rem;
+}
+.logo i{
+  margin: 1rem;
+}
 /*----------- contact-------------------------------------------------------------------------------------*/
 body {
   overflow-x: hidden;
@@ -590,7 +644,7 @@ form button:hover {
  }
  .galPage-img-con{
   width: 95%;
-
+ margin-top: 2rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -737,11 +791,14 @@ width: 100%;
   background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.9));
 }
 .modal-image{
-  width: 700px;
-  height: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80vw;
+  height: 80vh;
   z-index: 3;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 /*------------------------------------------*/
   .modal-hide{
@@ -756,3 +813,50 @@ width: 100%;
   }
 
 /*------------------------------------------*/
+/*-----------video-----------------------------------------------------------------------------------*/
+.vid-con{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  
+}
+/*----------------------------------*/
+  .color{
+    background-color: rgb(215, 234, 247);
+    transition: .8s;
+  }
+  .color-hide{
+    background-color: white;
+    transition: .8s;
+  }
+/*----------------------------------*/
+.vid-back{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.video{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+video{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-vid{
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
