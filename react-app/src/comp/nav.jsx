@@ -15,8 +15,8 @@ function Nav() {
              </ul>
              </div>
              <div className="link-font">
-             <h1><i class="fab fa-instagram"></i></h1>
-             <h1><i class="fab fa-facebook-f"></i></h1>
+             <Link to=""><h1><i class="fab fa-instagram"></i></h1></Link>
+             <Link to=""><h1><i class="fab fa-facebook-f"></i></h1></Link>
              </div>
          </nav>
         

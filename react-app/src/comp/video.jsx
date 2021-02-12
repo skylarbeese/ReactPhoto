@@ -26,7 +26,7 @@ function Video() {
      <div className={`vid-con ${show ? 'color' : 'color-hide'}`}>
          <div className="vid-back">
              <div className="video" >
-             <HoverVideoPlayer
+            {/* <HoverVideoPlayer
                  videoSrc={Arr[0]}
                  pausedOverlay={
                     <div 
@@ -36,10 +36,10 @@ function Video() {
                 </div> 
                 }
                 loadingOverlay={
-                <div className="loading-spinner-overlay" />
-             }
-            /> 
-            {  /*  <video  loop muted preload  onMouseOver={event => event.target.play()}
+                <div className="loading-spinner-overlay" /> 
+             
+                /> */}
+              <video  loop muted preload  onMouseOver={event => event.target.play()}
                       onMouseOut={event => event.target.pause()}>
                     <source src={Arr} type="video/mp4" />
               
@@ -50,8 +50,8 @@ function Video() {
              >
          </div> 
         
-            </video> */}
-       
+            </video> 
+      
          </div> 
          </div>
         </div> 
