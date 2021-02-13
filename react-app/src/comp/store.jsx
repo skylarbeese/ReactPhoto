@@ -2,9 +2,16 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import Nav from './nav'
 import Footer from './footer'
-
+import Cart from './store/cart'
 import Item from './../storeItemArr'
 function Store() {
+    const[cart, setCart] = React.useState([])
+    const onAdd = () => {
+
+    }
+    const onRemove = () => {
+        
+    }
   return (
    <>
    <Nav />
@@ -32,12 +39,12 @@ function Store() {
                    <h1>${Item[1].price}</h1>
                </div>
            </div>
-
+           
         
 
          </div>
     </div>
-    
+    <Cart onAdd={onAdd} onRemove={onRemove} setCart={setCart} cart={cart}/>
    <Footer />
    </>
   );

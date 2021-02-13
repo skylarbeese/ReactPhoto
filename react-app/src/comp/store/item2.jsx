@@ -1,11 +1,12 @@
 import React from 'react'
-
+import Nav from './../nav'
+import Footer from './../footer'
 import Item from './../../storeItemArr'
 function Item2() {
  
   return (
    <>
-  
+   <Nav/>
     <div className="item-con-page">
     <div className="store-items-page">
            <div className="item1 store-item-page">
@@ -20,6 +21,7 @@ function Item2() {
            </div>
     </div>
     </div>
+    <Footer />
    </>
   );
 }

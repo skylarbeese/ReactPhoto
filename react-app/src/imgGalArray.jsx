@@ -9,8 +9,9 @@ const Arr = [
     "/img/img40.jpg",
     "/img/img8.jpg",
     "/img/img9.jpg",
+  
     "/img/img16.jpg",
-    "/img/img25.jpg",
+    "/img/img25.jpg", 
     "/img/img27.jpg",
     "/img/img15.jpg",
     "/img/img24.jpg",
