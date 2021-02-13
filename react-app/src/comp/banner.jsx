@@ -29,11 +29,11 @@ function Banner() {
    <section>
     <div className="banner-con">
      <div className={`banner-text`}>
-            <h1 className={show ? 'ban' : 'trans'}>This is the Title</h1>
+            <h1 className={show ? 'ban' : 'trans'}>what Im about</h1>
             <div className={`underline ${show ? 'under-hide' : 'under'}`}></div>
-            <p className={show ? 'para-hide' : 'para'}>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
-                capicola tri-tip burgdoggen. Chislic meatloaf meatball, beef ribs 
-               
+            <p className={show ? 'para-hide' : 'para'}>
+                 I am a photogarpher base in Utah county. Looking for adventure and amazing sceens. My goal is
+                 to capture the beauty that the state holds
             </p>
         </div>
         <div className="grad"></div>  

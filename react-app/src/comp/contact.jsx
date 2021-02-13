@@ -23,9 +23,9 @@ function Contact() {
       <div className="form">
      <div className="header-text">
          <h1 className="head"> Send me a message! </h1>
-         <p>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
-                capicola tri-tip burgdoggen. Chislic meatloaf meatball, beef ribs 
-               
+         <p>
+               send me an email right here on my web page! keep up to date with activities and
+               shoots, I would love for you to come join my workshops!
             </p>
          <div className="underline-contact"></div>
           </div>
@@ -47,6 +47,7 @@ function Contact() {
             </div>
            <label>Type your message here* </label>
                <textarea name="message" id="" rows="" placeholder="type your message..."></textarea>
+           <label>required fields* </label>
            <button type="submit" value="Send" >send message</button>
         </form>
      </div>

@@ -18,11 +18,12 @@ function Cat() {
    <>
     <div className="cat-con">
         <div className="cat-text">
-            <h1 className={show ? 'title' : 'title-hide'}>This is the Title</h1>
+            <h1 className={show ? 'title' : 'title-hide'}> the subject </h1>
             <div className={`underline ${show ? 'under-cat' : 'under-cat-hide'}`}></div>
-            <p className={show ? 'para-cat' : 'para-cat-hide'}>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
-                capicola tri-tip burgdoggen. Chislic meatloaf meatball, beef ribs 
-               
+            <p className={show ? 'para-cat' : 'para-cat-hide'}>
+                My work fetchures meny diffrent areas of photograpy. I specialize in outdoor and landscape photography
+                prefaring to work in the ruggid landscape and scenery that surrounds us on the wild state of Utah.
+                I also to work indoors in the studio photographing products for brands.
             </p>
         </div>
         <div className={`img-cat`}>
@@ -33,7 +34,7 @@ function Cat() {
                   <div className="grad-small"></div>
                   <div className={`image-grid `} style= {{backgroundImage: `url(${im})`}}></div>
                   <div className="cat-im-text">
-                      <h1>Hello</h1>
+                      <h1>cheack out my work</h1>
                   </div>
                </div>
                </>

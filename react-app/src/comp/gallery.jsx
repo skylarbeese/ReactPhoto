@@ -22,11 +22,12 @@ function Gallery() {
   
     <div className="gallery-con">
     <div className="gallery-text">
-            <h1 className={show ? 'header-show' : 'header-hide'}>This is the Title</h1>
+            <h1 className={show ? 'header-show' : 'header-hide'}>view my photo gallery here!</h1>
             <div className={`underline ${show ? 'under-gal-show' : 'under-gal-hide'}`}></div>
-            <p className={show ? 'para-gal-show' : 'para-gal-hide'}>Bacon ipsum dolor amet salami venison doner flank. Bacon prosciutto pork belly 
-                capicola tri-tip burgdoggen. Chislic meatloaf meatball, beef ribs 
-               
+            <p className={show ? 'para-gal-show' : 'para-gal-hide'}>
+                view my body of work by clicking on the link below or on the menu at the top of the page. my work 
+                consist of outdoor and landscape photography. most of which was taken right here in the beautiful
+                and stunning mountains of Utah.
             </p>
      
         </div>
