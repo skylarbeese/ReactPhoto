@@ -31,21 +31,23 @@ function Store() {
   console.log(products.id)
   return (
    <>
-   <Nav />
+    <Nav />
+  
+  
    <div className="store-text">
             <h1>View my store</h1>
             <div className={`underline`}></div>
             <p>para</p>
     </div>
-
+    <div className="cart">
+    <Cart onAdd={onAdd} onRemove={onRemove}  cart={cart}/>
+    </div>
    <main>
   
 
 
     <div className="store-ccon">
-    <div className="cart">
-    <Cart onAdd={onAdd} onRemove={onRemove}  cart={cart}/>
-    </div>
+    
     <div className="store-con">
       <div className="store-items">
          {products.map(function(item, i) {

@@ -928,12 +928,12 @@ main{
 /*-------------------------cart---------------------------------------------------------------------------*/
   .cart {
    float: right;
-    background-color: aqua;
+    background-color: red;
     width: 20vh;
     height: 100vh;
    z-index: 2;
    padding: 2rem;
-  transform: translateX(-250px);
+  
   position: relative;  
   }
 /*-------------------------item2---------------------------------------------------------------------------*/
