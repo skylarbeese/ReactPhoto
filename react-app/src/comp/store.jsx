@@ -8,7 +8,13 @@ import Item from './../storeItemArr'
 function Store() {
     const {products} = Item;
     const[cart, setCart] = React.useState([])
- 
+    const[cartSlide, setCartSlider] = React.useState(false)
+    const show = () => {
+      setCartSlider(!cartSlide)
+      console.log('click')
+    }
+    console.log(cartSlide)
+
    const onAdd = (product) => {
       const exist = cart.find(x => x.itemId === product.itemId)
       if(exist) {
@@ -28,19 +34,26 @@ function Store() {
          setCart(cart.map(x => x.itemId === product.itemId ? { ...exist, qty: exist.qty - 1} : x))
       }
     }
-  console.log(products.id)
+
   return (
    <>
     <Nav />
-  
-  
+   <div className="cart-btn-con">
+    <div className="cart-btn">
+         
+            <p>Cart Items(<div>{cart.length}</div>) </p>
+            <h1 onClick={show}><i class="fas fa-shopping-cart"></i></h1>
+          </div>
+          </div>
    <div className="store-text">
             <h1>View my store</h1>
             <div className={`underline`}></div>
             <p>para</p>
+        
     </div>
-    <div className="cart">
-    <Cart onAdd={onAdd} onRemove={onRemove}  cart={cart}/>
+    
+    <div className={`cart ${cartSlide ? 'slideShow' : 'slideHide'}`}>
+    <Cart onAdd={onAdd} onRemove={onRemove}  cart={cart} cartSlide={cartSlide} setCartSlider={setCartSlider} show={show}/>
     </div>
    <main>
   
@@ -56,17 +69,20 @@ function Store() {
              
            
             <div className="item-img">
-            <div className={`img-item-${i}`} style= {{backgroundImage: `url(${item.img})`}}></div>
+            <div className={`img-item img-item-${i}`} style= {{backgroundImage: `url(${item.img})`}}></div>
             </div>
             <div className="name-item">
                  <h1>{item.name}</h1>
+              
             </div>
             <div className="item-ch">
             {item.items.map(function(item, i) {
                      return (
                          <>
+                         
                          <div className="text-items" key={i}>
-                             <div>{item.price}</div>
+                         
+                             <div>${item.price}</div>
                             <div>{item.item}</div>
                            <button onClick={() => onAdd(item)}>add</button>
                         </div>
@@ -97,11 +113,11 @@ function Store() {
   </div> */}
            
         
- /</div>
+          </div>
       
-    </div>
+        </div>
     </main>
-   <Footer />
+  
    </>
   );
 }
