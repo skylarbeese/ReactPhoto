@@ -34,7 +34,9 @@ function Store() {
          setCart(cart.map(x => x.itemId === product.itemId ? { ...exist, qty: exist.qty - 1} : x))
       }
     }
+   
 
+ 
   return (
    <>
     <Nav />
@@ -73,7 +75,7 @@ function Store() {
             </div>
             <div className="name-item">
                  <h1>{item.name}</h1>
-              
+                
             </div>
             <div className="item-ch">
             {item.items.map(function(item, i) {
@@ -81,10 +83,17 @@ function Store() {
                          <>
                          
                          <div className="text-items" key={i}>
-                         
-                             <div>${item.price}</div>
-                            <div>{item.item}</div>
-                           <button onClick={() => onAdd(item)}>add</button>
+                        <div className="text-store-info">
+                          <div className="item-size-size">
+                         <div className="item-size">{item.item}</div>
+                         <div className={`underline`}></div>
+                         </div>
+                         <div className="items-btn">
+                       <div className="item-price">${item.price}</div>
+                       <button onClick={() => onAdd(item)}>add</button> 
+                       </div>
+                       </div>
+                           
                         </div>
                             </>
                          );
@@ -95,22 +104,7 @@ function Store() {
         })}
            
          </div>
-    { /*      <div className="item1 store-item">
-               <div className="img-item" style= {{backgroundImage: `url(${Item[0].img})`}}></div>
-               <div className="item-text">
-                   <Link to="./item1"><h1>parts</h1></Link>
-                   <button onClick={() => onAdd(Item[0])}>add</button>
-               </div>
-
-           </div>
-
-           <div className="item2 store-item">
-               <div className="img-item" style= {{backgroundImage: `url(${Item[1].img})`}}></div>
-               <div className="item-text">
-               <Link to="./store/item2"><h1>parts</h1></Link>
-               <button onClick={() => onAdd(Item[1])}>add</button>
-               </div>
-  </div> */}
+   
            
         
           </div>

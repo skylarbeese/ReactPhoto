@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Item from './../../storeItemArr'
+
 function Cart({cart, onAdd, onRemove, show}) {
   const itemsPrice = cart.reduce((a, c) => a + c.price * c.qty, 0)
   const total = itemsPrice  
@@ -22,7 +22,7 @@ function Cart({cart, onAdd, onRemove, show}) {
        
         <div className="item-cart-name">{item.name}</div>
         <div className={`underline`}></div>
-          <div>size: {item.item}</div>
+          <div>print size: {item.item}</div>
           <div className="q-price">
           <div>how meny of this item: {item.qty}</div>
         
