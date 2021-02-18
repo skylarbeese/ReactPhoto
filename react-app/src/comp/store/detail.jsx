@@ -29,7 +29,8 @@ class Detail extends React.Component {
     
         const {product} = this.state
         const {onAdd, cart} = this.context
-      console.log(cart.length)
+     
+    
         return (
             <>
               <h1>details</h1>
@@ -54,10 +55,10 @@ class Detail extends React.Component {
               
           </div>
           <div className="item-ch">
-          {item.items.map(function(item, i) {
+      {item.items.map(function(item, i) {
                    return (
                        <>
-                       
+                   
                        <div className="text-items" key={i}>
                       <div className="text-store-info">
                         <div className="item-size-size">
@@ -66,15 +67,15 @@ class Detail extends React.Component {
                        </div>
                        <div className="items-btn">
                      <div className="item-price">${item.price}</div>
-                     <button onClick={() => onAdd(item.id)}>add</button> 
+                     <button onClick={() => onAdd(item)}>add</button> 
                      </div>
                      </div>
                          
                       </div>
-                          </>
+                      </>
                        );
 
-                  })}
+                  })} 
                   </div>
           </div>
           );

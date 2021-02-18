@@ -14,6 +14,7 @@ function Cart({cart, onAdd, onRemove, show}) {
        <div className={`underline`}></div>
      </div>
     {/*<div>{cart.length}</div> */}
+    
     <div>{cart.length === 0 && <div>cart is empty</div>}</div>
     {cart.map((item) => {
       return <div key={item.itemId}>

@@ -4,23 +4,28 @@ export class DataProvider extends Component  {
     state = {
         product: [
             {id:"1" , 
-            idItem: 1,
+          
             img: "/img/img31.jpg", 
             name: "salt late temple",
             items: [
-                {itemId:1, item: "11x13", price: "300", name: "salt late temple"},
-                {itemId:2, item: "8x14", price: "240", name: "salt late temple"}
+                { itemId:1, item: "9x14", price: "300", name: "salt late temple"}, 
+                { itemId:2, item: "10x15", price: "340", name: "salt late temple"} 
             ],
+             
+        
             count: 1
             },
             {id:"2" , 
-            idItem: 2,
+         
             img: "/img/img39.jpg", 
             name: "mountain",
             items: [
-                {itemId:3, item: "11x13", price: "300", name: "salt late temple"},
-                {itemId:4, item: "8x14", price: "240", name: "salt late temple"}
+                { itemId:3, item: "9x14", price: "300", name: "mountian"}, 
+                { itemId:4, item: "10x15", price: "340", name: "mountian" } 
             ],
+               
+               
+         
             count: 1
             },
         
@@ -28,20 +33,27 @@ export class DataProvider extends Component  {
         cart: []
     }
     onAdd = (id) => {
-        const{cart, product} = this.state
-        const check = cart.every(item => {
-        return item.items.itemId !== id
-        })
-        if(check) {
-            const data = product.filter(item => {
-                return item.items.itemId === id
-            })
-            this.setState({cart: [...cart, ...data]})
-           
-        }
+      const{cart} = this.state
+       const exist = cart.find(x => x.itemId === id.itemId)
+        if(exist) {
+          this.setState({cart: (cart.map(x => x.itemId === id.itemId ? {
+            ...exist, qty: exist.qty + 1 
+          } : x ))})
+        } else {
+          this.setState({cart: ([...cart, {...id, qty: 1}])})
+        } 
+
+   
     }
-    onRemove = () => {
-        
+    onRemove = (id) => {
+        const{cart} = this.state
+        const exist = cart.find(x => x.itemId === id.itemId)
+      if(exist.qty === 1 ) {
+         this.setState({cart: (cart.filter(x => x.itemId !== id.itemId))})
+      } else {
+         this.setState({cart: (cart.map(x => x.itemId === id.itemId ? { ...exist, qty: exist.qty - 1} : x))})
+      }
+    
     }
     add = () => {
         
