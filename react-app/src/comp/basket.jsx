@@ -13,43 +13,46 @@ class Basket extends Component {
          <>
          <Nav />
     <div className={`cart-con `} >
+    
      <div className={"cart-title"} >
      
        <h1>Cart</h1>
        <div className={`underline`}></div>
      </div>
-    {/*<div>{cart.length}</div> */}
-    <div>{cart.length === 0 && <div>cart is empty</div>}</div>
+     <div className="cart-con1">
   
+    <div>{cart.length === 0 && <div>cart is empty</div>}</div>
+     <div className="cart-items">
     {cart.map((item) => {
-      return <div key={item.itemId}>
+      return <><div key={item.itemId} className="cart-info-con">
        
-        <div className="item-ind">
+       
         
-        <div className="item-cart-name">{item.name}</div>
+        <div className="item-name">{item.name}</div>
         <div className={`underline`}></div>
-          <div>print size: {item.item}</div>
-          <div className="q-price">
+        <div className="item-info">
+          <div >print size: {item.item}</div>
+         
           <div>how meny of this item: {item.qty}</div>
         
           <div>${item.price}</div>
+          </div>
         </div>
+     
         <div className="add-minus-btn">
           <button onClick={() => onAdd(item)}>+</button>
           <button onClick={() => onRemove(item)}>-</button>
         </div>
-       
-        </div>
-       
-      </div>
+       </>
+        
 
     })}
-   
+   </div>
    {cart.length !== 0 && (
       <>
-      <div className="final-price">
+      <div className="check-prices">
           <div className="total-text">total price</div>
-      <div className="price-total">
+      <div className="">
       <div className={`underline`}></div>
           <div className="total">${total.toFixed(2)}</div>
       </div>
@@ -60,6 +63,7 @@ class Basket extends Component {
       <div className="check-out-con">{cart.length >= 1 && <div className="check-out-btn">
            <button>check out </button>
         </div>}</div>
+  </div>
   </div>
          </>
         )

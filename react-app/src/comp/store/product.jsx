@@ -25,7 +25,7 @@ render() {
           <div className={`img-item img-item-${i}`} style= {{backgroundImage: `url(${item.img})`}}></div>
           </div>
           <div className="name-item">
-          <Link to={`/comp/store1/${item.id}`}><h1>{item.name}</h1></Link>
+          <h1 className="item-name"><Link to={`/comp/store1/${item.id}`}>{item.name}</Link></h1>
               
           </div>
      

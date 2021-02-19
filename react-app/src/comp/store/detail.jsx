@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { DataContext } from './context';
-
+import {Link } from 'react-router-dom'
 class Detail extends React.Component {
     static contextType = DataContext
     
@@ -33,61 +33,72 @@ class Detail extends React.Component {
     
         return (
             <>
-              <h1>details</h1>
+           
               <main>
   
 
-
-  <div className="store-ccon">
-  
+              <div className="header-item">
+       <h1>Hello</h1>
+       <div className={`underline`}></div>
+     </div>
   <div className="store-con">
-    <div className="store-items">
+    
        {product.map(function(item, i) {
         return (
-          <div className={`store-item item-${i}`} key={i}>
+          <div className={`store-item-it item-${i}`} key={i}>
            
          
-          <div className="item-img">
-          <div className={`img-item img-item-${i}`} style= {{backgroundImage: `url(${item.img})`}}></div>
+          <div className="img-detail">
+          <div className={`img-d img-item-${i}`} style= {{backgroundImage: `url(${item.img})`}}></div>
           </div>
-          <div className="name-item">
-               <h1>{item.name}</h1>
+          
+               
               
-          </div>
+        
           <div className="item-ch">
+          <div className="item-title">
+          <h1>{item.name}</h1>
+          <div className={`underline`}></div>
+          <p>
+          Cow short loin shoulder hamburger jerky jowl. Bacon salami tail, 
+          corned beef ribeye turkey chislic capicola. Sausage rump t-bone doner, 
+          swine pork chop tenderloin hamburger capicola shank. Short loin ball 
+        
+          </p>
+          </div>
+          <div className="item-con-info">
       {item.items.map(function(item, i) {
                    return (
                        <>
                    
-                       <div className="text-items" key={i}>
-                      <div className="text-store-info">
-                        <div className="item-size-size">
-                       <div className="item-size">{item.item}</div>
+                       <div className="item-text-price" key={i}>
+                        <div className="size">
+                       <div>{item.item}</div>
                        <div className={`underline`}></div>
                        </div>
                        <div className="items-btn">
-                     <div className="item-price">${item.price}</div>
+                     <div >${item.price}</div>
                      <button onClick={() => onAdd(item)}>add</button> 
                      </div>
                      </div>
                          
-                      </div>
+                  
                       </>
                        );
 
                   })} 
                   </div>
+                  </div>
           </div>
           );
       })}
          
-       </div>
- 
-         
       
-        </div>
     
       </div>
+      <Link to="/comp/store1"><div className="go-back">
+        <h1>shop more</h1>
+      </div></Link>
   </main>
             </>
         )

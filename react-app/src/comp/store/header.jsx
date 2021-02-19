@@ -8,8 +8,14 @@ class Header extends Component {
         const {cart} = this.context
         return (
             <>
-            <div>
-            <Link to="/comp/basket"><i class="fas fa-shopping-cart"></i> <h1>{cart.length}</h1></Link>
+            <div className="header-cart-con">
+            <Link to="/comp/basket">  <div className="cart-btn-con">
+    <div className="cart-btn">
+         
+            <p>Cart Items(<div>{cart.length}</div>) </p>
+            <h1 ><i class="fas fa-shopping-cart"></i></h1>
+          </div>
+          </div></Link>
            
             </div>
             </>

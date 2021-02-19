@@ -19,7 +19,7 @@ function App() {
     
     <Route path="/comp/store1" component={Store1} />
     <Route path="/comp/basket" component={Basket} /> 
-     <Route path="/comp/store" component={Store} />
+     {/*<Route path="/comp/store" component={Store} /> */}
         <Route path="/comp/contact1" component={Contact1} />
         <Route path="/comp/galleryPage" component={GalleryPage} />
         <Route path="/"  component={Home} />

@@ -12,8 +12,8 @@ function Nav() {
                  <Link to=""><li>Home</li></Link>
                 <Link to="/comp/contact1"><li> Contact</li></Link>
                  <Link to="/comp/galleryPage"><li>Gallery</li></Link>
-                 <Link to="/comp/store"><li>Store</li></Link>
-                 <Link to="/comp/store1"><li>Section</li></Link>
+                {/* <Link to="/comp/store"><li>Store</li></Link> */}
+                 <Link to="/comp/store1"><li>Store</li></Link>
              </ul>
              </div>
              <div className="link-font">
