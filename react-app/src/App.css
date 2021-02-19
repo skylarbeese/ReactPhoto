@@ -785,16 +785,17 @@ width: 100%;
   align-items: center;
   display: flex;
   z-index: 2;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.9));
+  background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9));
 }
 .modal-image{
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 80vw;
-  height: 80vh;
+  width: 90vw;
+  height: 90vh;
   z-index: 3;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 }
 /*------------------------------------------*/

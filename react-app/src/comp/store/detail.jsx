@@ -38,7 +38,7 @@ class Detail extends React.Component {
   
 
               <div className="header-item">
-       <h1>Hello</h1>
+       <h1>Prints</h1>
        <div className={`underline`}></div>
      </div>
   <div className="store-con">
