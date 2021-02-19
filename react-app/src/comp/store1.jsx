@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Section from "./section"
 import Nav from './nav'
-
+import Footer from './footer'
 class Store1 extends Component {
 
 render() {
@@ -12,7 +12,7 @@ render() {
   
         <Nav />
         <Section />
-   
+        <Footer />
       </>
   );
 }

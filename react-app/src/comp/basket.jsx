@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Nav from './nav'
+import Footer from './footer'
 import {DataContext} from './store/context'
 class Basket extends Component {
   static contextType = DataContext
@@ -40,8 +41,8 @@ class Basket extends Component {
         </div>
      
         <div className="add-minus-btn">
-          <button onClick={() => onAdd(item)}>+</button>
-          <button onClick={() => onRemove(item)}>-</button>
+          <button onClick={() => onAdd(item)}><i class="fas fa-plus"></i></button>
+          <button onClick={() => onRemove(item)}><i class="fas fa-minus"></i></button>
         </div>
        </>
         
@@ -65,6 +66,7 @@ class Basket extends Component {
         </div>}</div>
   </div>
   </div>
+  <Footer />
          </>
         )
     }
