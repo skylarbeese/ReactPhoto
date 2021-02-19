@@ -97,7 +97,10 @@ class Detail extends React.Component {
     
       </div>
       <Link to="/comp/store1"><div className="go-back">
+        <div className="d">
         <h1>shop more</h1>
+        <i class="fas fa-angle-right"></i>
+        </div>
       </div></Link>
   </main>
             </>

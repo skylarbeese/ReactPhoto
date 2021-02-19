@@ -1120,14 +1120,23 @@ video{
     margin-left: 1rem;
   }
   .go-back{
-    float: right;
+    
     margin-right: 5rem;
     padding: 3rem;
     opacity: .5;
+  float: right;
 
   }
-  .go-back h1{
+  .d{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .go-back .d h1{
     font-size: 2rem;
+  }
+  .go-back .d i{
+    font-size: 3rem;
   }
 /*-------------------------cart---------------------------------------------------------------------------*/
  /* .cart {
