@@ -73,7 +73,7 @@ class Detail extends React.Component {
                    
                        <div className="item-text-price" key={i}>
                         <div className="size">
-                       <div><h2>size:</h2> {item.item}</div>
+                       <div className="size-size"><h2>size:</h2> <h2>{item.item}</h2></div>
                        <div className={`underline`}></div>
                        </div>
                        <div className="items-btn">

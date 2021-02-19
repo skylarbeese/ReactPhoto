@@ -1148,6 +1148,15 @@ video{
     align-items: center;
     display: flex;
   }
+  .size .size-size{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+  }
+  .size-size h2{
+    margin-left: 1rem;
+  }
   .go-back .d h1{
     font-size: 1.3rem;
   }
