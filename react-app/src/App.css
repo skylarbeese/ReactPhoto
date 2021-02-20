@@ -255,6 +255,9 @@ nav ul li:hover {
  
   transition: .8s;
 }
+.cat-im-text h1{
+  color: white;
+}
 .im-con{
   background-color: coral; 
    justify-content: center;
@@ -732,36 +735,64 @@ grid-row: span 3;
 
  .img-10{
 
- grid-column: span 6;
- grid-row: span 5;
+ grid-column: span 3;
+ grid-row: span 3;
  } 
  .img-11{
 
-grid-column: span 6;
-grid-row: span 5;
+grid-column: span 3;
+grid-row: span 3;
  } 
  .img-12{
 
- grid-column: span 8;
-grid-row: span 7;
- } 
- .img-13{
+  grid-column: span 3;
+  grid-row: span 3;
+   } 
+   .img-13{
 
-grid-column: span 6;
-grid-row: span 3;
- } 
+    grid-column: span 3;
+    grid-row: span 3;
+     } 
  .img-14{
 
+ grid-column: span 8;
+grid-row: span 6;
+ } 
+ .img-15{
+
 grid-column: span 6;
 grid-row: span 3;
  } 
- .img-15{
+ .img-16{
+
+grid-column: span 6;
+grid-row: span 3;
+ } 
+ .img-17{
 
  grid-column: span 12;
 grid-row: span 3;
  } 
+ .img-18{
 
+  grid-column: span 4;
+ grid-row: span 3;
+  } 
+  .img-19{
 
+    grid-column: span 8;
+   grid-row: span 3;
+    } 
+    .img-20{
+
+      grid-column: span 4;
+     grid-row: span 3;
+      } 
+      .img-21{
+
+        grid-column: span 4;
+       grid-row: span 3;
+        } 
 
  .image-gal-page{
 width: 100%;
@@ -987,7 +1018,7 @@ video{
   justify-content: center;
   align-items: center;
   display: flex;
- flex-direction: column;
+
   width: 100%;
   margin-bottom: 3rem;
 }
@@ -1020,7 +1051,10 @@ video{
   flex-direction: column;
    margin: 3rem;
    width: 50%;
-   height: 400px;
+   height: 450px;
+ }
+ .item-0{
+   width: 30%;
  }
  .item-title-he{
   justify-content: center;
@@ -1348,6 +1382,9 @@ video{
       padding: 7px ;
       margin-left: 1rem;
       margin-right: 1rem;
+    }
+    button{
+      outline:none;
     }
 /*-------------------------item2---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/

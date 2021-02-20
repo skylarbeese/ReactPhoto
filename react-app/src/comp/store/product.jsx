@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { DataContext } from './context'
 import { Link } from 'react-router-dom'
 class Product extends Component {
+    
     static contextType = DataContext 
 render() {
     const  {product} = this.context

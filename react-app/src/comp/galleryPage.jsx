@@ -13,7 +13,7 @@ function GalPage() {
   const[imgMoveRow4, setImgMoveRow4] = React.useState(false)
   const[imgMoveRow5, setImgMoveRow5] = React.useState(false)
   const[imgMoveRow6, setImgMoveRow6] = React.useState(false)
-
+  const[imgMoveRow7, setImgMoveRow7] = React.useState(false)
   const[showModal, setShowModal] = React.useState(false)
   const[popImgUrl, setPopImgUrl] = React.useState('')
   const handlePopUp = (imgUrl) => {
@@ -62,7 +62,7 @@ React.useEffect(() => {
     setImgMoveRow4(false)
   }
   /*----------------------------*/
-  if(pageYOffset > 1200) {
+  if(pageYOffset > 1400) {
   
     setImgMoveRow5(true)
 
@@ -71,13 +71,23 @@ React.useEffect(() => {
     setImgMoveRow5(false)
   }
   /*----------------------------*/
-  if(pageYOffset > 1400) {
+  if(pageYOffset > 1600) {
   
     setImgMoveRow6(true)
 
   } else {
   
     setImgMoveRow6(false)
+  }
+  /*----------------------------*/
+   /*----------------------------*/
+   if(pageYOffset > 2200) {
+  
+    setImgMoveRow7(true)
+
+  } else {
+  
+    setImgMoveRow7(false)
   }
   /*----------------------------*/
 }, [pageYOffset]) 
@@ -141,17 +151,35 @@ React.useEffect(() => {
            <img
              className={`image-gal-page img-11 ${imgMoveRow4 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[11]} onClick={() => handlePopUp(ArrGal[11])}
           />
+          <img
+             className={`image-gal-page img-12 ${imgMoveRow4 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[12]} onClick={() => handlePopUp(ArrGal[12])}
+          />
+          <img
+             className={`image-gal-page img-13 ${imgMoveRow4 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[13]} onClick={() => handlePopUp(ArrGal[13])}
+          />
            <img
-             className={`image-gal-page img-12 ${imgMoveRow5 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[12]} onClick={() => handlePopUp(ArrGal[12])}
-          />
-          <img
-             className={`image-gal-page img-13 ${imgMoveRow5 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[13]} onClick={() => handlePopUp(ArrGal[13])}
-          />
-          <img
              className={`image-gal-page img-14 ${imgMoveRow5 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[14]} onClick={() => handlePopUp(ArrGal[14])}
           />
           <img
-             className={`image-gal-page img-15 ${imgMoveRow6  ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[15]} onClick={() => handlePopUp(ArrGal[15])}
+             className={`image-gal-page img-15 ${imgMoveRow5 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[15]} onClick={() => handlePopUp(ArrGal[15])}
+          />
+          <img
+             className={`image-gal-page img-16 ${imgMoveRow5 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[16]} onClick={() => handlePopUp(ArrGal[16])}
+          />
+          <img
+             className={`image-gal-page img-17 ${imgMoveRow6  ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[17]} onClick={() => handlePopUp(ArrGal[17])}
+          />
+            <img
+             className={`image-gal-page img-18 ${imgMoveRow7  ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[18]} onClick={() => handlePopUp(ArrGal[18])}
+          />
+            <img
+             className={`image-gal-page img-19 ${imgMoveRow7  ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[19]} onClick={() => handlePopUp(ArrGal[19])}
+          />
+            <img
+             className={`image-gal-page img-20 ${imgMoveRow7 ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[20]} onClick={() => handlePopUp(ArrGal[20])}
+          />
+            <img
+             className={`image-gal-page img-21 ${imgMoveRow7  ? 'show-gal' : 'hide-gal'}`}  src={ArrGal[21]} onClick={() => handlePopUp(ArrGal[21])}
           />
           
        </div>
