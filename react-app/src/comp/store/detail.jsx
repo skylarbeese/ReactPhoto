@@ -45,7 +45,7 @@ class Detail extends React.Component {
     
        {product.map(function(item, i) {
         return (
-          <div className={`store-item-it item-${i}`} key={i}>
+          <div className={`store-item-it de-${i}`} key={i}>
            
          
           <div className="img-detail">

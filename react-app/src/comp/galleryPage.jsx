@@ -81,7 +81,7 @@ React.useEffect(() => {
   }
   /*----------------------------*/
    /*----------------------------*/
-   if(pageYOffset > 2200) {
+   if(pageYOffset > 2000) {
   
     setImgMoveRow7(true)
 
