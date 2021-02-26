@@ -7,7 +7,7 @@ function Cat() {
     console.log(pageYOffset)
     //console.log(show)
     React.useEffect(() => {
-       if(pageYOffset > 700) {
+       if(pageYOffset > 300) {
           setShow(true)
         } else {
             setShow(false)

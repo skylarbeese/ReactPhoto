@@ -1,10 +1,37 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Link} from 'react-router-dom'
-
+/*function WindowSize() {
+  const [size, setSize] = React.useState([window.innerWidth, window.innerHeight])
+  React.useEffect(() => {
+    const handleResize = () => {
+      setSize([window.innerWidth, window.innerHeight])
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener("resize", handleResize);
+  }, [])
+  return size
+} */
 function Nav() {
+ // const [width, height] = WindowSize();
+  const [win, setWin] = React.useState(false)
+  console.log(win)
+ const hand = () => {
+    if(window.innerWidth > 700) {
+      setWin(true)
+    } else {
+      setWin(false)
+    }
+  }
+  window.addEventListener("resize", hand);
+ React.useEffect(() => {
+    hand()
+}, []);  
+
   return (
    <>
-     <div className="nav-con">
+
+ {win ? (<> 
+  <div className="nav-con">
          <nav>
           <div className="textt">
          <Link to=""><h1 class="lo">S<span>B</span>PHOTO</h1></Link>
@@ -22,7 +49,7 @@ function Nav() {
              </div>
          </nav>
         
-     </div>
+     </div> </>) : null}
    </>
   );
 }

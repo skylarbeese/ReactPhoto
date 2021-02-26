@@ -1388,6 +1388,14 @@ video{
     }
 /*-------------------------item2---------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 0px) and (max-width:1200px) {
+  .contact {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 0px) and (max-width:1100px) {
   .img-con{
     position: relative;
@@ -1655,6 +1663,9 @@ flex-direction: column;
   .gallery-text p{
     width: 70vw;
   }
+  .gallery-con .btn{
+    margin-bottom: 1rem;
+  }
   .gal-page-con{
     width: 100vw;
   
@@ -1692,7 +1703,7 @@ flex-direction: column;
     flex-direction: column;
     display: flex;
     width: 90vw;
-    margin: 0;
+    margin: 2rem;
    overflow-x: hidden;
   }
   .gallery-text p{
@@ -1782,7 +1793,7 @@ flex-direction: column;
   .img-con{
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -1793,7 +1804,7 @@ flex-direction: column;
   .grad-hero{
     position: absolute;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.2));
     z-index: 2;
   }
@@ -1802,7 +1813,7 @@ flex-direction: column;
     align-items: center;
     display: flex;
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1838,6 +1849,7 @@ flex-direction: column;
 
   /*--------------------------------------*/
   .cat-text{
+    margin-top: 2rem;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -2012,6 +2024,15 @@ flex-direction: column;
      } 
     
   }
+  @media screen and (min-width: 0px) and (max-width: 780px) {
+    .header-text h1{
+       margin-bottom: 1rem;
+    }
+    .header-text p{
+      margin-bottom: 1rem;
+      width: 80%;
+   }
+  }
 @media screen and (min-width: 0px) and (max-width:780px) {
   .img-con{
     position: relative;
@@ -2027,7 +2048,7 @@ flex-direction: column;
   .grad-hero{
     position: absolute;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.2));
     z-index: 2;
   }
@@ -2036,7 +2057,7 @@ flex-direction: column;
     align-items: center;
     display: flex;
     width: 100vw;
-    height: 50vh;
+    height: 70vh;
    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2323,7 +2344,7 @@ flex-direction: column;
         width: 100%;
         height: 40vh;
       }
-     /*---------------detail---------------------------------------------------------------------------------------*/
+ /*---------------detail---------------------------------------------------------------------------------------*/
 
 .img-detail{
   height: 400px;
@@ -2338,6 +2359,15 @@ flex-direction: column;
 .go-back{
   margin-right: 2rem;
 }
+}
+@media screen and (min-width: 0px) and (max-width: 620px) {
+  .header-text h1{
+     margin-bottom: 1rem;
+  }
+  .header-text p{
+    margin-bottom: 1rem;
+    width: 80%;
+ }
 }
 @media screen and (min-width: 0px) and (max-width: 550px) {
   .gal-page-con{
