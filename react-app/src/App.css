@@ -2309,7 +2309,9 @@ flex-direction: column;
 .item-title p{
    width: 70vw;
 }
-    
+.item-title-he p{
+  width: 80%;
+}
 }
 @media screen and (min-width: 0px) and (max-width: 660px) {
   .gal-page-con{
@@ -2536,5 +2538,11 @@ flex-direction: column;
     animation: load .8s ;
     
    } 
+   .item-title h1{
+     font-size: 1.3rem;
+   }
+   .item-title p{
+    font-size: .9rem;
+  }
   
 }
