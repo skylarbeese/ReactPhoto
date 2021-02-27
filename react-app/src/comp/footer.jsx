@@ -2,10 +2,23 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 function Footer() {
+  const [win, setWin] = React.useState(false)
+  console.log(win)
+ const hand = () => {
+    if(window.innerWidth > 800) {
+      setWin(true)
+    } else {
+      setWin(false)
+    }
+  }
+  window.addEventListener("resize", hand);
+ React.useEffect(() => {
+    hand()
+}, []);  
   return (
    <>
     <div className="footer-con">
-      <div className="footer-text">
+    {win ? (<div className="footer-text">
         <div className="name">
         <h1>Skylar Beese</h1>
         </div>
@@ -16,7 +29,9 @@ function Footer() {
              <h1><i class="fab fa-facebook-f"></i></h1>
              </div>
          </div>
-      </div>
+      </div>) : ( <div className="name">
+        <h1>Skylar Beese</h1>
+        </div>) }
        
     </div>
    </>

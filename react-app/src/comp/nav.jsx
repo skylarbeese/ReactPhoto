@@ -54,7 +54,9 @@ const btnHandler = () => {
         
      </div> </>) : (<>
    <div className="nav-c">
+   
     <div className={`links-con ${btn ? 'menu-show' : 'menu-hide'}`}>
+        <Link to=""><h1 class="lo">S<span>B</span>PHOTO</h1></Link>
                 <Link to=""><li>Home</li></Link>
                 <Link to="/comp/contact1"><li> Contact</li></Link>
                 <Link to="/comp/galleryPage"><li>Gallery</li></Link>
