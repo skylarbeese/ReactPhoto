@@ -13,6 +13,7 @@ import {Link} from 'react-router-dom'
 } */
 function Nav() {
  // const [width, height] = WindowSize();
+ const [btn, setBtn] = React.useState(false)
   const [win, setWin] = React.useState(false)
   console.log(win)
  const hand = () => {
@@ -26,7 +27,9 @@ function Nav() {
  React.useEffect(() => {
     hand()
 }, []);  
-
+const btnHandler = () => {
+  setBtn(!btn)
+}
   return (
    <>
 
@@ -51,7 +54,7 @@ function Nav() {
         
      </div> </>) : (<>
    <div className="nav-c">
-    <div className={`links-con `}>
+    <div className={`links-con ${btn ? 'menu-show' : 'menu-hide'}`}>
                 <Link to=""><li>Home</li></Link>
                 <Link to="/comp/contact1"><li> Contact</li></Link>
                 <Link to="/comp/galleryPage"><li>Gallery</li></Link>
@@ -60,8 +63,8 @@ function Nav() {
                 <Link to=""><h1><i class="fab fa-instagram"></i></h1></Link>
                 <Link to=""><h1><i class="fab fa-facebook-f"></i></h1></Link>
            </div>
-     </div>
-    <div className="nav-link" >
+     </div> 
+    <div className={`nav-link`} onClick={btnHandler}>
 
    
     

@@ -537,7 +537,7 @@ body {
  
 }
 form{
-  z-index: 3;
+  
   display: flex;
   flex-direction: column;
  
@@ -1790,7 +1790,8 @@ flex-direction: column;
 @media screen and (min-width: 0px) and (max-width: 800px) {
   .nav-c{
     width: 100%;
-    background-color: black;
+    background-color: #F8F8FF;
+
     height: 5rem;
     position: relative;
     z-index: 3;
@@ -1806,8 +1807,16 @@ flex-direction: column;
     position: absolute;
     display: flex;
     flex-direction: column;
-    
+    z-index: 1;
   } 
+  .menu-show{
+    transform: translateY(0px);
+    transition: .4s;
+  }
+  .menu-hide{
+    transform: translateY(-1000px);
+    transition: .4s;
+  }
   .links-con a{
     text-decoration: none;
   }
@@ -1847,6 +1856,8 @@ flex-direction: column;
     flex-direction: column; 
     position: absolute;
     margin-right: 4rem;
+    margin-bottom: 4rem;
+    z-index: 2;
   }
   .burger span{
     width: 100%;
@@ -1881,7 +1892,7 @@ flex-direction: column;
     align-items: center;
     display: flex;
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2105,7 +2116,7 @@ flex-direction: column;
   .img-con{
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -2116,7 +2127,7 @@ flex-direction: column;
   .grad-hero{
     position: absolute;
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.2));
     z-index: 2;
   }
@@ -2125,7 +2136,7 @@ flex-direction: column;
     align-items: center;
     display: flex;
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2429,12 +2440,36 @@ flex-direction: column;
 }
 }
 @media screen and (min-width: 0px) and (max-width: 620px) {
+  .header-text{
+    margin-top: 2rem;
+  }
   .header-text h1{
      margin-bottom: 1rem;
   }
   .header-text p{
     margin-bottom: 1rem;
+    
     width: 80%;
+ }
+ form{
+  width: 80vw;
+ }
+ .con-input{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+ .con-input .in-con {
+  width: 100%;
+  }
+ form button{
+   padding-left: 1px;
+   padding-right: 1px;
+
+   padding-top: 2px;
+   padding-bottom: 2px;
  }
 }
 @media screen and (min-width: 0px) and (max-width: 550px) {
