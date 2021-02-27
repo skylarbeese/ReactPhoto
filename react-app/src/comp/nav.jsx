@@ -16,7 +16,7 @@ function Nav() {
   const [win, setWin] = React.useState(false)
   console.log(win)
  const hand = () => {
-    if(window.innerWidth > 700) {
+    if(window.innerWidth > 800) {
       setWin(true)
     } else {
       setWin(false)
@@ -49,7 +49,33 @@ function Nav() {
              </div>
          </nav>
         
-     </div> </>) : null}
+     </div> </>) : (<>
+   <div className="nav-c">
+    <div className={`links-con `}>
+                <Link to=""><li>Home</li></Link>
+                <Link to="/comp/contact1"><li> Contact</li></Link>
+                <Link to="/comp/galleryPage"><li>Gallery</li></Link>
+                <Link to="/comp/store1"><li>Store/Print</li></Link>
+          <div className="link-font-sl">
+                <Link to=""><h1><i class="fab fa-instagram"></i></h1></Link>
+                <Link to=""><h1><i class="fab fa-facebook-f"></i></h1></Link>
+           </div>
+     </div>
+    <div className="nav-link" >
+
+   
+    
+      
+    
+    <div className={`burger `} >
+      <span className={` line1 `}></span>
+        <span className={` line2 `}></span>
+        <span className={` line3 `}></span>
+      </div>
+     </div>
+   </div>
+       </>
+       )}
    </>
   );
 }
