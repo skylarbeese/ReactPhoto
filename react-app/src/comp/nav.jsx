@@ -13,6 +13,16 @@ import {Link} from 'react-router-dom'
 } */
 function Nav() {
  // const [width, height] = WindowSize();
+ const [line1, setLine1] = React.useState(false)
+ const [line2, setLine2] = React.useState(false)
+ const [line3, setLine3] = React.useState(false)
+
+ const handleX = () => {
+    setLine1(!line1)
+    setLine2(!line2)
+    setLine3(!line3)
+ }
+
  const [btn, setBtn] = React.useState(false)
   const [win, setWin] = React.useState(false)
   console.log(win)
@@ -23,7 +33,7 @@ function Nav() {
       setWin(false)
     }
   }
-  window.addEventListener("resize", hand);
+ window.addEventListener("resize", hand);
  React.useEffect(() => {
     hand()
 }, []);  
@@ -72,10 +82,10 @@ const btnHandler = () => {
     
       
     
-    <div className={`burger `} >
-      <span className={` line1 `}></span>
-        <span className={` line2 `}></span>
-        <span className={` line3 `}></span>
+    <div className={`burger `} onClick={handleX}>
+      <span className={` line1 ${line1 ? 'line1-ba' : 'line1-ch'}`}></span>
+        <span className={` line2 ${line2 ? 'line2-ba' : 'line2-ch'}`}></span>
+        <span className={` line3 ${line3 ? 'line3-ba' : 'line3-ch'}`}></span>
       </div>
      </div>
    </div>

@@ -3,8 +3,9 @@ import Arr from './../imgArr1'
 import Nav from './nav'
 import Footer from './footer'
 import EmailJs from 'emailjs-com'
+
 function Contact() {
-  const sendEmail = (e) => {
+ const sendEmail = (e) => {
     e.preventDefault()
  
     EmailJs.sendForm('gmail', 'template_0y45lja', e.target, 'user_xy8ABjwAfQzsJe1G1xVR6')
@@ -14,7 +15,7 @@ function Contact() {
      console.log(error.text);
  });
    e.target.reset()
-   }
+   } 
    const [win, setWin] = React.useState(false)
    console.log(win)
   const hand = () => {

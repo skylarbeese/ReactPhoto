@@ -17,12 +17,7 @@ render() {
   <div className="item-title-he">
           <h1>Store</h1>
           <div className={`underline`}></div>
-          <p>
-          Cow short loin shoulder hamburger jerky jowl. Bacon salami tail, 
-          corned beef ribeye turkey chislic capicola. Sausage rump t-bone doner, 
-          swine pork chop tenderloin hamburger capicola shank. Short loin ball 
-        
-          </p>
+           
           </div>
   <div className="store-con">
     <div className="store-items">
