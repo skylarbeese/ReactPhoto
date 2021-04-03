@@ -3,10 +3,10 @@
 
 const Arr ={
    products: [
-       {  id: 1, img: "/img/img31.jpg", name: "salt late temple",
+       {  id: 1, img: "/img/img31.jpg", name: "salt lake temple",
    
       items: [
-         {itemId:1, item: "11x13", price: "300", name: "salt late temple"}, {itemId:2, item: "12x24", price: "230", name: "salt late temple"}
+         {itemId:1, item: "11x13", price: "300", name: "salt lake temple"}, {itemId:2, item: "12x24", price: "230", name: "salt late temple"}
       ]
  },
    {id: 2, img: "/img/img39.jpg", name: "mountain",

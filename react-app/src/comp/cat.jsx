@@ -34,7 +34,7 @@ function Cat() {
                   <div className="grad-small"></div>
                   <div className={`image-grid `} style= {{backgroundImage: `url(${im})`}}></div>
                   <div className="cat-im-text">
-                      <h1>cheack out my work</h1>
+                      <h1>view my work</h1>
                   </div>
                </div>
                </>
