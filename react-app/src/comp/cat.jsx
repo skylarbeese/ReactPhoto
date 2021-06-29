@@ -3,6 +3,7 @@ import Arr from './../imgArray'
 import {useWindowScroll} from 'react-use'
 function Cat() {
     const[show, setShow] = React.useState(false)
+    const[mob, setMob] = React.useState(false)
     const {y: pageYOffset } = useWindowScroll()
     console.log(pageYOffset)
     //console.log(show)
@@ -12,8 +13,19 @@ function Cat() {
         } else {
             setShow(false)
         }
-       
+     
     }, [pageYOffset])
+    const hand = () => {
+        if(window.innerWidth > 670) {
+            setMob(true)
+        } else {
+            setMob(false)
+        }
+      }
+     window.addEventListener("resize", hand);
+     React.useEffect(() => {
+        hand()
+    }, []);  
   return (
    <>
     <div className="cat-con">
@@ -26,7 +38,7 @@ function Cat() {
                 I also to work indoors in the studio photographing products for brands.
             </p>
         </div>
-        <div className={`img-cat`}>
+      {mob ?  (<><div className={`img-cat`}>
            {Arr.map(im => {
                return (
                 <>
@@ -40,7 +52,21 @@ function Cat() {
                </>
                )
            })}
+        </div></>) : (<>
+            <div className={`img-cat`}>
+           {Arr.map(im => {
+               return (
+                <>
+                <div class={`im-con ${show ? 'img-grid-trans' : 'img-grid-trans-hide'} `}>
+                
+                  <div className={`image-grid `} style= {{backgroundImage: `url(${im})`}}></div>
+                 
+               </div>
+               </>
+               )
+           })}
         </div>
+        </>)}
     </div>
    </>
   );

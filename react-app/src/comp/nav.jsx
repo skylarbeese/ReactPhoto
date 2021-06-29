@@ -16,11 +16,15 @@ function Nav() {
  const [line1, setLine1] = React.useState(false)
  const [line2, setLine2] = React.useState(false)
  const [line3, setLine3] = React.useState(false)
-
+ const [navD, setNavD] = React.useState(false)
  const handleX = () => {
     setLine1(!line1)
     setLine2(!line2)
     setLine3(!line3)
+ }
+ const handleNav = () => {
+  setNavD(!navD)
+  
  }
 
  const [btn, setBtn] = React.useState(false)
@@ -44,6 +48,9 @@ const btnHandler = () => {
    <>
 
  {win ? (<> 
+ 
+      
+ 
   <div className="nav-con">
          <nav>
           <div className="textt">
@@ -52,7 +59,7 @@ const btnHandler = () => {
                  <Link to=""><li>Home</li></Link>
                 <Link to="/comp/contact1"><li> Contact</li></Link>
                  <Link to="/comp/galleryPage"><li>Gallery</li></Link>
-                {/* <Link to="/comp/store"><li>Store</li></Link> */}
+                 
                  <Link to="/comp/store1"><li>Store/Print</li></Link>
              </ul>
              </div>

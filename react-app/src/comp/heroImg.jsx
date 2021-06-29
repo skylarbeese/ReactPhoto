@@ -41,10 +41,9 @@ function HeroImg({slides}) {
     <div className="slider">
        
     {Arr.map((im, index) => {
-       return   <div key={index}>
+       return  <div key={index}>
           {index === active &&  <div className="slide-img" style= {{backgroundImage: `url(${im})` }}></div>}
-        </div> 
-        })}
+        </div>})}
         
     </div>
   
